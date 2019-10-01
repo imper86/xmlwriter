@@ -1,0 +1,21 @@
+{
+    "name": "imper86/xmlwriter",
+    "description": "Extension to php XMLWriter",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "imper",
+            "email": "me@imper.info"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "ext-xmlwriter": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Imper86\\XMLWriter\\": "src"
+        }
+    }
+}
