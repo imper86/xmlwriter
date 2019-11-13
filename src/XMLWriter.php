@@ -18,4 +18,15 @@ class XMLWriter extends \XMLWriter
 
         return true;
     }
+
+    public function parentElement(string $name, ?\Closure $children)
+    {
+        $this->startElement($name);
+
+        if ($children) {
+            $children($this);
+        }
+
+        $this->endElement();
+    }
 }
